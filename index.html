@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Birth Of A Revolution Pt. II - A Global Model For Forecasting Political Instability</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- Fonts -->
+    <!----------->
+    <!-- @link https://fonts.google.com/specimen/Karla?selection.family=Karla:400,700 -->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <!--------->
+    <!-- Link -->
+    <link rel="stylesheet" href="./src/public/index.css">
+  </head>
+  <body>
+    <div id="hw">
+      <div class="screen hidden" id="no-js-screen">
+
+      </div>
+      <div class="screen hidden" id="no-size-screen">
+
+      </div>
+      <div class="screen hidden" id="loading-screen">
+        <div id="loading-canvas"></div>
+      </div>
+      <div class="screen" id="app-screen">
+        <div class="header">
+          <div class="logo">
+            <a href="#">
+              <img src="./src/public/img/BoRLogo_sm.png" alt="To The Github ->">
+            </a>
+          </div>
+          <div class="activate-btn info-screen" data-activate="#info-screen">
+            <span class="icon">?</span>
+            <span class="info-txt">About this project &rarr;</span>
+          </div>
+        </div>
+        <div class="left-info info-area">
+          <div class="modes">
+            <span class="title bold">
+              <span class="title-dy">World &#x1F30E;</span>
+              <img class="flag" src="">
+            </span>
+            <ul class="stat-list">
+              <li id="instability" class="lg-stat">
+                Instability
+                <span class="instability-dy dy-stat">--%</span>
+              </li>
+              <li id="year" class="lg-stat">
+                Year
+                <span class="year-dy dy-stat">2018</span>
+              </li>
+              <span class="stat-list-br"></span>
+              <li id="nativeName" class="sm-stat">
+                Native Name
+                <span class="native-dy dy-stat">--</span>
+              </li>
+              <li id="population" class="sm-stat">
+                Population
+                <span class="pop-dy dy-stat">7,632,819,325</span>
+              </li>
+              <li id="capital" class="sm-stat">
+                Capital
+                <span class="capital-dy dy-stat">--</span>
+              </li>
+              <li id="region" class="sm-stat">
+                Region
+                <span class="region-dy dy-stat">--</span>
+              </li>
+              <li id="language" class="sm-stat">
+                Language
+                <span class="lang-dy dy-stat">--</span>
+              </li>
+              <li id="isoCode" class="sm-stat">
+                ISO Code
+                <span class="iso-dy dy-stat">--</span>
+              </li>
+              <li id="currency" class="sm-stat">
+                Currency
+                <span class="currency-dy dy-stat">--</span>
+              </li>
+              <li id="gini" class="sm-stat">
+                Income Inequality
+                <span class="gini-dy dy-stat">--</span>
+              </li>
+              <span class="stat-list-br"></span>
+              <span class="stat-list-br trans"></span>
+              <a id="histBtn" class="stat-btn">Historical Unrest Data &rarr;</a>
+              <span class="stat-list-br trans"></span>
+              <a id="histBtn" class="stat-btn">See An Error? Report It &#x1f60e;</a>
+            </ul>
+          </div>
+        </div>
+        <div class="right-info info-area">
+          <div class="tweets">
+            <span class="title bold">
+              <span class="title-dy">Streaming <span class="dots">&#x23f8;</span>
+              </span>
+            </span>
+            <span class="agg-sentiment">
+              Aggregate Sentiment:
+              <span class="agg-sent-dy" data-total="0">0</span>
+              <span class="agg-sentiment-desc">Aggregate sentiment is measured -1 (most neg.) to 1 (most pos.)</span>
+            </span>
+            <span class="stat-list-br"></span>
+            <ul class="stat-list tweet-list">
+              <!--
+                <li class="tweet">
+                  <span class="text">@MrNashvilleTalk @LipsHush Kenya is frickin mean!  How can an ugly soul attract a mate is beyond me.  Seriously cranky.</span>
+                  <span class="sentiment">
+                    Sentiment:&nbsp;
+                    <span class="sentiment-dy pos">Positive</span>
+                    <span class="sentiment-score-dy">(0.23)</span>
+                  </span>
+                </li>
+              -->
+            </ul>
+          </div>
+        </div>
+        <div class="bottom-controls">
+          <div class="bottom-controls-title title-text">Modes</div>
+          <div class="control-btns">
+            <div class="control-btn active" id="streaming">Streaming (Active &#x2714;)</div>
+            <div class="control-btn" id="searchTerm">By Search Term</div>
+            <div class="control-btn" id="byCountry">By Country</div>
+          </div>
+        </div>
+        <main>
+          <div id='globe'></div>
+        </main>
+      </div>
+      <div class="screen hidden" id="info-screen">
+
+      </div>
+      <div id="bg" class=""></div>
+    </div>
+    <!-- Scripts -->
+    <!------------->
+    <!-- ThreeJS -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.min.js'></script>
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Socket.io -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+    <!-- Loading JS -->
+    <!--<script src='./src/ext/loading.js'></script>-->
+    <!-- WebGl Globe JS -->
+    <script src='./src/ext/globe.js'></script>
+    <!-- Main JS -->
+    <script src='./src/public/index.js'></script>
+  </body>
+</html>
+  </body>
+</html>
