@@ -113,7 +113,7 @@ $(document).ready(function() {
     })
   }
   // Run the socketStream function
-  socketStream();
+  //socketStream();
 
   /**
     * @desc Update the tweet stream

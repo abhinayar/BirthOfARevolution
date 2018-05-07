@@ -111,7 +111,7 @@ var Globe = function Globe(container) {
       //var material  = new THREE.MeshPhongMaterial();
       var material = new THREE.ShaderMaterial({
         uniforms: {
-          texture: { type: 't', value: THREE.ImageUtils.loadTexture('../src/public/img/colored_md.jpg')}
+          texture: { type: 't', value: THREE.ImageUtils.loadTexture('../public/img/colored_md.jpg')}
         },
         vertexShader: [
           'varying vec3 vNormal;',
